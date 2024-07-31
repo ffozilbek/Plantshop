@@ -129,11 +129,14 @@ main {
     top: 0;
     left: 0;
     position: fixed;
+    z-index: 99;
 }
+
 
 .navbar {
     padding-top: 40px;
     padding-bottom: 40px;
+    position: relative;
 }
 
 .nav-item:not(:last-child) {
@@ -161,7 +164,7 @@ main {
     color: var(--custom-white);
 }
 
-.btn-success-custom:hover {
+.btn-custom:hover {
     background-color: var(--custom-green);
     color: var(--custom-white);
 }
@@ -174,19 +177,117 @@ main {
     box-shadow: 0 0 0 0.15rem var(--custom-green);
 }
 
+.site-hero {
+    position: relative;
+}
 
+.site-hero__img-side {
+    height: 740px;
+}
 
+.site-hero__img {
+    object-fit: cover;
+    height: 100%;
+}
 
+.site-hero__heading {
+    max-width: 32.6875rem;
+    width: 100%;
+    font-size: 4.25rem;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--custom-green);
+    margin-bottom: 24px;
+    margin-top: 0;
+}
+
+.site-hero__text {
+    max-width: 519px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 2rem;
+    margin-bottom: 110px;
+}
+
+.site-hero__btns {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.btn-prev-custom,.btn-next-custom {
+    padding: 38px 48px;
+    font-size: 2rem;
+    color: var(--custom-green);
+}
+
+.btn-next-custom  {
+    background-color: var(--custom-green);
+    color: var(--custom-white);
+    text-align: left;
+}
+
+.btn-prev-custom span,.btn-next-custom span {
+    font-size: 1.5rem;
+    padding-bottom: 13.5px;
+}
+
+.btn-prev-custom span svg {
+    margin-right: 8px;
+}
+
+.btn-next-custom span svg {
+    margin-left: 8px;
+}
+
+.btn-prev-custom span {
+    color: rgba(51, 51, 51,0.5);
+}
+
+.btn-next-custom span {
+    color: rgba(242, 242, 242,0.5)
+}
 
 /* MEDIA QUERY */
 
-@media only screen and (min-width: 1140px) {
-    .container {
-        max-width: 1208px;
-        padding-left: 20px;
-        padding-right: 20px;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
+@media only screen and (max-width: 1140px) {
+    .site-hero__heading {
+        font-size: 3.25rem;
     }
+
+    .btn-prev-custom,.btn-next-custom {
+        padding: 28px 30px;
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .navbar-custom {
+        position: absolute;
+        width: 100%;
+        background-color: rgba(255, 255, 255,0.8);
+        top: 100%;
+        left: 0;
+    }
+
+    .site-hero__img {
+        width: 100%;
+    }
+
+    .site-hero__content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .site-hero__text {
+        margin-bottom: 55px;
+    }
+
+    .site-hero__btns {
+        position: static;
+    }
+
+
 }

@@ -31,8 +31,8 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-4 mb-lg-0 flex-row justify-content-center">
+                <div class="collapse navbar-collapse navbar-custom" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-4 mb-lg-0 flex-row pt-4 pt-lg-0 justify-content-center">
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="#">
                                 <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -60,16 +60,61 @@
                             </a>
                         </li>
                     </ul>
-                    <form class="d-flex justify-content-center"" role=" search">
+                    <form class="d-flex justify-content-center pb-4 pb-lg-0" role=" search">
                         <button class="btn btn-outline-custom" type="submit">Sign Up</button>
-                        <button class="btn btn-success-custom" type="submit">Sign In</button>
+                        <button class="btn btn-success-custom btn-custom" type="submit">Sign In</button>
                     </form>
                 </div>
             </div>
         </nav>
     </header>
 
-
+    <!-- SITE MAIN -->
+    <main class="main">
+        <!-- SITE HERO -->
+        <section class="site-hero">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 p-0 pb-4 pb-lg-0 site-hero__img-side">
+                        <img class="img-fluid site-hero__img" src="./img/hero-img.jpg"
+                            alt="Gullarni parvarishlayotgan ayolning qo'llari" width="608" height="740"
+                            srcset="./img/hero-img.jpg 1x, ./img/hero-img@2x.jpg 2x">
+                    </div>
+                    <div class="col-lg-6 site-hero__content">
+                        <h1 class="site-hero__heading">Kembang Flower Mantap</h1>
+                        <p class="site-hero__text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+                        <div class="site-hero__btns float-end">
+                            <button class="btn btn-prev-custom">
+                                <div class="btn-prev-custom__inner d-flex flex-column">
+                                    <span class="d-flex align-items-center"><svg width="32" height="32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M25.333 14.667H9.52l4.84-5.814a1.335 1.335 0 0 0-2.053-1.706l-6.667 8c-.045.063-.085.13-.12.2 0 .066 0 .106-.094.173-.06.153-.092.316-.093.48.001.164.033.327.093.48 0 .067 0 .107.094.173.035.07.075.137.12.2l6.667 8a1.333 1.333 0 0 0 1.026.48 1.333 1.333 0 0 0 1.027-2.186l-4.84-5.814h15.813a1.334 1.334 0 0 0 0-2.666Z"
+                                                fill="currentColor" />
+                                        </svg>
+                                        Previous</span>
+                                    Kaktus Plant
+                                </div>
+                            </button>
+                            <button class="btn btn-next-custom btn-custom">
+                                <div class="btn-next-custom__inner d-flex flex-column">
+                                    <span class="d-flex align-items-center">Next
+                                        <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6.667 17.333H22.48l-4.84 5.814a1.335 1.335 0 0 0 2.053 1.706l6.667-8c.045-.063.085-.13.12-.2 0-.066 0-.106.093-.173.06-.153.092-.316.094-.48a1.335 1.335 0 0 0-.094-.48c0-.067 0-.107-.093-.173a1.576 1.576 0 0 0-.12-.2l-6.667-8a1.334 1.334 0 0 0-1.88-.174 1.333 1.333 0 0 0-.173 1.88l4.84 5.814H6.667a1.333 1.333 0 0 0 0 2.666Z"
+                                                fill="currentColor" />
+                                        </svg>
+                                    </span>
+                                    Rahasia Plant
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
