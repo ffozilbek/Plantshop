@@ -124,14 +124,32 @@ main {
     flex-grow: 1;
 }
 
+.g-md-5, .gy-5 {
+    --bs-gutter-y: 2rem;
+}
+
+.g-md-5, .gx-5 {
+    --bs-gutter-x: 2rem;
+}
+
 .header {
     width: 100%;
     top: 0;
     left: 0;
     position: fixed;
     z-index: 99;
+    transition: background-color 0.1s ease;
 }
 
+.is-sticky {
+    background-color: var(--custom-white);
+    box-shadow: 0 0 5px #000;
+}
+
+.is-sticky .navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
 .navbar {
     padding-top: 40px;
@@ -291,9 +309,13 @@ main {
     .navbar-custom {
         position: absolute;
         width: 100%;
-        background-color: rgba(255, 255, 255,0.8);
+        background-color: rgba(255, 255, 255,0.9);
         top: 100%;
         left: 0;
+    }
+
+    .site-hero__heading {
+        font-size: 2.25rem;
     }
 
     .site-hero__img {
