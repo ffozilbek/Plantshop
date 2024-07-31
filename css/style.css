@@ -248,6 +248,32 @@ main {
     color: rgba(242, 242, 242,0.5)
 }
 
+.site-features {
+    padding-top: 142px;
+    padding-bottom: 80px;
+}
+
+.card {
+}
+.card-custom {
+    padding: 22px 16px;
+}
+.card__title {
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: var(--custom-green);
+    margin-bottom: 16px;
+}
+.card__icon {
+    margin-right: 16px;
+}
+.card__text {
+    font-size: 10px;
+    line-height: 1rem;
+}
+
 /* MEDIA QUERY */
 
 @media only screen and (max-width: 1140px) {
