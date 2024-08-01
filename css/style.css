@@ -342,7 +342,7 @@ main {
 
 
 .site-services {
-    padding-bottom: 90px;
+    padding-bottom: 80px;
 }
 
 .site-services__content {
@@ -377,6 +377,122 @@ main {
     height: 610px;
 }
 
+.cta {
+    margin-bottom: 80px;
+}
+
+.cta-inner {
+    background-color: var(--custom-silver);
+}
+
+.cta-inner__content {
+    padding-top: 88px;
+    padding-bottom: 88px;
+    padding-left: 97px;
+}
+.cta-inner__heading {
+    font-size: 2.5rem;
+    color: var(--custom-dark-orange);
+    font-weight: bold;
+    line-height: 3.5rem;
+    margin-bottom: 32px;
+}
+
+.cta-inner__img-wrapper {
+    max-width: 480px;
+    height: 360px;
+}
+
+.footer {
+    padding-bottom: 71px;
+    padding-bottom: 60px;
+    position: relative;
+}
+
+.footer::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    display: block;
+    background-color: var(--custom-green);
+}
+
+.footer__container {
+    max-width: 986px;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.footer__row {
+    max-width: 986px;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footer__logo-link {
+    max-width: 282px;
+    width: 100%;
+}
+.footer__logo {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    letter-spacing: 1.2px;
+    font-family: 'Poppins',sans-serif;
+    text-transform: uppercase;
+    color: var(--custom-green);
+    margin-bottom: 24px;
+}
+.footer__logo-descr {
+    font-family: 'Work Sans',sans-serif;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+.footer__text {
+    font-size: 0.8125rem;
+    font-family: 'Work Sans',sans-serif;
+    line-height: 1.25rem;
+}
+
+.footer__block-title {
+    font-family: 'Work Sans',sans-serif;
+    font-size: 1rem;
+    margin-top: 0;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.list-group-item {
+    border: 0;
+    padding: 0;
+    margin-bottom: 14px;
+}
+.footer__form {
+    max-width: 234px;
+    width: 100%s;
+}
+
+.form-group {
+    margin-bottom: 14px;
+    font-size: 0.75rem;
+}
+
+.footer__form-title {
+    font-family: 'Work Sans',sans-serif;
+    font-size: 1rem;
+    margin-top: 0;
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+
+.btn-submit {
+    font-size: 0.75rem;
+    padding: 6px 12px;
+    border-radius: 2px;
+    line-height: 0.875rem;
+}
 
 /* MEDIA QUERY */
 
@@ -427,6 +543,16 @@ main {
         padding-right: 0;
 
     }
+}
 
-
+@media only screen and (max-width: 768px) {
+    .cta-inner__content {
+        padding-top: 44px;
+        padding-bottom: 44px;
+        padding-left: 50px;
+    }
+    .cta-inner__heading {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
 }
